@@ -8,55 +8,91 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        table{
+        table {
             width: 500px;
-        }
-        td, th{
+            border-collapse: collapse;
+        } 
+        td, th {
             border: 1px solid black;
             padding: 10px;
         }
 
-        thead, tfoot{
+        thead, tfoot {
             background-color: grey;
             color: white;
         }
 
-        td.num{
+        td.num {
             text-align: right;
+        }
+
+        caption { 
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
         }
     </style>
 </head>
 <body>
     <h1>USO DE TABELAS GRANDES</h1>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Estado</th>
-                    <th>População</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>São Paulo</td>
-                    <td class="num">45 919 049</td>
-                </tr>
-                <tr>
-                    <td>Minas Gerais</td>
-                    <td class="num">21 168 943</td>
-                </tr>
-                <tr>
-                    <td>Rio de Janeiro</td>
-                    <td class="num">17 264 943</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th>Total de Habitantes</th>
-                    <td class="num"><strong>210.147.125</strong></td>
-                </tr>
-            </tfoot>
-        </table>
-
+            <table>
+                <caption>População das Unidades Federativas</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Estado</th>
+                        <th scope="col" style="width: 50px;">População</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>São Paulo</td>
+                        <td class="num">45 919 049</td>
+                    </tr>
+                    <tr>
+                        <td>Minas Gerais</td>
+                        <td class="num">21 168 943</td>
+                    </tr>
+                    <tr>
+                        <td>Rio de Janeiro</td>
+                        <td class="num">17 219 679</td>
+                    </tr>
+                    <tr>
+                        <td>Bahia</td>
+                        <td class="num">14 850 513</td>
+                    </tr>
+                    <tr>
+                        <td>Paraná</td>
+                        <td class="num">11 824 665</td>
+                    </tr>
+                    <tr>
+                        <td>Rio Grande do Sul</td>
+                        <td class="num">11 229 915</td>
+                    </tr>
+                    <tr>
+                        <td>Pernambuco</td>
+                        <td class="num">9 539 029</td>
+                    </tr>
+                    <tr>
+                        <td>Ceará</td>
+                        <td class="num">9 233 656</td>
+                    </tr>
+                    <tr>
+                        <td>Pará</td>
+                        <td class="num">8 664 306</td>
+                    </tr>
+                    <tr>
+                        <td>Santa Catarina</td>
+                        <td class="num">8 058 441</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Total de Habitantes</th>
+                        <td class="num"><strong>157.708.196</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
 </body>
 </html>
